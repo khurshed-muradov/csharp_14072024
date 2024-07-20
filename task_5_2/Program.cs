@@ -26,28 +26,29 @@ void ShowLargestDigit(int digit1, int digit2)
 {
     if (digit1 > digit2)
     {
-        Console.WriteLine(digit1);
+        Console.Write("-> " + digit1);
     }
     else
     {
-        Console.WriteLine(digit2);
+        Console.Write("-> " + digit2);
     }
 }
 
 void PrintNumber(int num1)
 {
-    Console.WriteLine(num1);
+    Console.Write(num1 + " ");
 }
 
 int num = GetRandomNumber();
 PrintNumber(num);
-
 int firstDigit = GetFirstDigit(num);
-PrintNumber(firstDigit);
-
 int lastDigit = GetLastDigit(num);
-PrintNumber(lastDigit);
-
 ShowLargestDigit(firstDigit, lastDigit);
 
+System.Console.WriteLine();
 
+int num2 = GetRandomNumber();
+PrintNumber(num2);
+int firstDigit2 = GetFirstDigit(num2);
+int lastDigit2 = GetLastDigit(num2);
+ShowLargestDigit(firstDigit2, lastDigit2);
