@@ -7,13 +7,47 @@
 
 int GetRandomNumber()
 {
-    int number = new Random().Next(10,100);
-    Console.WriteLine(number);
+    int number = new Random().Next(10, 100);
     return number;
 }
-int firstDigit(int number1)
+
+int GetFirstDigit(int number1)
 {
-    number1 = number1/10;
+    number1 = number1 / 10;
     return number1;
 }
+
+int GetLastDigit(int number1)
+{
+    number1 = number1 % 10;
+    return number1;
+}
+void ShowLargestDigit(int digit1, int digit2)
+{
+    if (digit1 > digit2)
+    {
+        Console.WriteLine(digit1);
+    }
+    else
+    {
+        Console.WriteLine(digit2);
+    }
+}
+
+void PrintNumber(int num1)
+{
+    Console.WriteLine(num1);
+}
+
 int num = GetRandomNumber();
+PrintNumber(num);
+
+int firstDigit = GetFirstDigit(num);
+PrintNumber(firstDigit);
+
+int lastDigit = GetLastDigit(num);
+PrintNumber(lastDigit);
+
+ShowLargestDigit(firstDigit, lastDigit);
+
+
