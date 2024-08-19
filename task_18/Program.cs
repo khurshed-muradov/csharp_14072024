@@ -11,6 +11,11 @@ int Cordinate(string message)
 
 void FindQuarter(int a)
 {
+    if (a > 1 || a < 4)
+    {
+        System.Console.WriteLine("Неверный формат данных.");
+    }
+
     if (a == 1)
     {
         System.Console.WriteLine("X = (0; +n),  Y = (0; +n)");
