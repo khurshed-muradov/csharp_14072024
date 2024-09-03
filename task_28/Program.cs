@@ -12,7 +12,7 @@ int CallNumber(string message)
 
 int Product(int callNumber)
 {
-    int product = 1; // Инициализируется счетчик произведения чисел от 1 до N.
+    int product = 1; // Инициализируется счетчик произведения чисел от 1 до N. (Факториал)
     for (int i = 1; i <= callNumber; i++)
     {
         product = i * product;
