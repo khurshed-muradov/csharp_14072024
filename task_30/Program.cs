@@ -9,12 +9,26 @@ int Call(string message)
     return int.Parse(Console.ReadLine()!);
 }
 
-int callNumber = Call("Введите число массива: ");
-
-int[] arrNumber = new int[callNumber];
-for (int i = 0; i < arrNumber.Length; i++)
+int[] RandomArray(int callNumber)
 {
-    arrNumber[i] = new Random().Next(0, 2);
-
-    System.Console.Write(arrNumber[i] + " ");
+    int[] arrNumber = new int[callNumber];
+    Random rnd = new Random();
+    for (int i = 0; i < arrNumber.Length; i++)
+    {
+        arrNumber[i] = rnd.Next(0, 2);
+    }
+    return arrNumber;
 }
+
+void PrintArray(int[] array)
+{
+    foreach (int element in array)
+    {
+        System.Console.Write(element + " ");
+    }
+}
+
+int callNumber = Call("Введите число массива: ");
+int[] randomArray = RandomArray(callNumber);
+System.Console.Write("\nСгенерированный массив: ");
+PrintArray(randomArray);
