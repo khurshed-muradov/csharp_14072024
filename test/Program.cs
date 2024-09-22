@@ -263,3 +263,129 @@
 // Описание:
 // Напиши программу, которая генерирует 5 случайных цифр от 0 до 9 и выводит их сумму.
 
+// Random rnd = new Random();
+// int sum = 0;
+// List<int> randomNumbers = new List<int>();
+// for (int i = 0; i < 5; i++)
+// {
+//     int randomDigit = rnd.Next(0, 10);
+//     randomNumbers.Add(randomDigit);
+//     sum = sum + randomDigit;
+// }
+// System.Console.Write("Цифры: " + string.Join(", ", randomNumbers));
+// System.Console.Write("\nСумма: " + sum);
+
+//---------------------------
+
+// Задача 6: Определение одинаковых цифр
+// Описание:
+// Напиши программу, которая генерирует 5 случайных цифр от 0 до 9 и проверяет, есть ли среди них одинаковые.
+// Random rnd = new Random();
+// List<int> digits = new List<int>();
+// for (int i = 0; i < 5; i++)
+// {
+//     int randomDigit = rnd.Next(0, 10);
+//     System.Console.Write(randomDigit + " ");
+//     digits.Add(randomDigit);
+// }
+// bool hasDuplicates = digits.GroupBy(x => x).Any(g => g.Count() > 1);
+// Console.WriteLine("\nЕсть одинаковые цифры: " + (hasDuplicates ? "Да" : "Нет"));
+
+//----------------------
+
+//int[] numbers = new int[5]; // Массив из 5 челых чисел.
+//numbers[0] = 10; // Присваевываем первое значение.
+//numbers[1] = 20; // Присваывываем второе значение.
+//int[]numbers = {1,2,3,4,5}; // Инициализация массива при создании.
+
+//----------------
+
+// Задача 1: Создание и вывод массива
+// Описание:
+// Напиши программу, которая создаёт массив из 5 целых чисел и выводит их на экран.
+
+// int[] numbers = { 1, 2, 3, 4, 5 };
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     System.Console.Write(numbers[i] + " ");
+// }
+
+//----------------------
+
+// Задача 2: Заполнение массива с клавиатуры
+// Описание:
+// Напиши программу, которая запрашивает у пользователя 5 чисел и заполняет ими массив, 
+// а затем выводит этот массив на экран.
+
+
+// int[] numbers = new int[5];
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     System.Console.Write("Введите числа: ");
+//     numbers[i] = int.Parse(Console.ReadLine()!);
+// }
+
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     System.Console.Write(numbers[i] + " ");
+// }
+
+//-----------------------
+
+// Задача 3: Сумма элементов массива
+// Описание:
+// Напиши программу, которая находит сумму всех элементов массива из 5 чисел.
+
+// int[] numbers = { 1, 2, 3, 4, 5 };
+// int sum = 0;
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     sum = sum + numbers[i];
+// }
+// System.Console.WriteLine("Сумма: " + sum);
+
+//-------------------
+
+// Задача 4: Максимальное значение в массиве
+// Описание:
+// Напиши программу, которая находит максимальное значение в массиве из 5 чисел.
+
+// int[] numbers = { 100, 2, 3, 4, 5 };
+// int max = numbers[0];
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     if (numbers[i] > max)
+//     {
+//         max = numbers[i];
+//     }
+// }
+// System.Console.WriteLine(max);
+
+//---------------------
+
+// Задача 5: Поиск элемента в массиве
+// Описание:
+// Напиши программу, которая запрашивает у пользователя число и проверяет, содержится ли оно в массиве.
+
+// int[] numners = { 1, 2, 3, 4, 5 };
+// System.Console.WriteLine("Введите число для поиска: ");
+// int search = int.Parse(Console.ReadLine()!);
+// bool found = false;
+
+// for (int i = 0; i < numners.Length; i++)
+// {
+//     if (numners[i] == search)
+//     {
+//         found = true;
+//         break;
+//     }
+// }
+
+// if (found)
+// {
+//     System.Console.WriteLine("Число найдено в массиве.");
+// }
+// else
+// {
+//     System.Console.WriteLine("Число не найдено.");
+// }
