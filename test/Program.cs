@@ -389,3 +389,79 @@
 // {
 //     System.Console.WriteLine("Число не найдено.");
 // }
+
+//----------------------------
+
+// Задача 6: Переворот массива (реверс)
+// Описание:
+// Напиши программу, которая переворачивает массив, то есть меняет порядок его элементов на обратный.
+
+// int[] numbers = { 1, 2, 3, 4, 5 };
+// Array.Reverse(numbers);
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     System.Console.Write(numbers[i] + " ");
+// }
+
+// Задача 7: Чётные числа в массиве
+// Описание:
+// Напиши программу, которая выводит все чётные числа из массива.
+
+// int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+// List<int> evenNumbers = new List<int>();
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     if (numbers[i] % 2 == 0)
+//     {
+//         evenNumbers.Add(numbers[i]);
+//     }
+// }
+// System.Console.WriteLine("Четные: " + string.Join(", ", evenNumbers));
+
+//-----------------------
+
+// Задача 8: Сортировка массива
+// Описание:
+// Напиши программу, которая сортирует массив по возрастанию.
+
+// int[] numbers = { 1, 5, 2, 7, 3, 9, 5, 12 };
+// Array.Sort(numbers);
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     System.Console.Write(numbers[i] + " ");
+// }
+
+//-----------------------
+
+// Задача 9: Заполнение массива случайными числами
+// Описание:
+// Напиши программу, которая заполняет массив из 10 элементов случайными числами от 1 до 100 и выводит его.
+
+// Random rnd = new Random();
+// int[] numbers = new int[10];
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     numbers[i] = rnd.Next(1, 101);
+//     System.Console.Write(numbers[i] + " ");
+// }
+
+//-------------------------------
+
+// Задача 10: Минимальное и максимальное значения в массиве
+// Описание:
+// Напиши программу, которая находит минимальное и максимальное значения в массиве из 10 случайных чисел.
+
+Random rnd = new Random();
+int[] numbers = new int[10];
+int min = int.MaxValue;
+int max = int.MinValue;
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    numbers[i] = rnd.Next(1, 101);
+    if (numbers[i] > max) max = numbers[i];
+    if (numbers[i] < min) min = numbers[i];
+}
+
+Console.WriteLine("Минимальное значение: " + min);
+Console.WriteLine("Максимальное значение: " + max);
